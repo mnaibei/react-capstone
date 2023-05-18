@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const url = 'https://api.coinlore.net/api/tickers/';
 
@@ -7,14 +7,13 @@ const initialState = {
   currencies: [],
   isLoading: false,
   error: null,
-}
+};
 
 export const getCurrencies = createAsyncThunk('currencies/getCurrencies', async () => {
   const response = axios.get(url);
   const test = (await response).data;
-  console.log('currencySlice', test.data);
   return test.data;
-})
+});
 
 const currencySlice = createSlice({
   name: 'currencies',
@@ -32,8 +31,8 @@ const currencySlice = createSlice({
       .addCase(getCurrencies, (state, action) => {
         state.isLoading = false;
         state.error = action.payload;
-      })
-  }
-})
+      });
+  },
+});
 
 export default currencySlice.reducer;

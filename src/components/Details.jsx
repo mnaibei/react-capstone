@@ -1,11 +1,29 @@
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Details = () => {
   const location = useLocation();
-  const currency = location.state.currency;
+  const { currency } = location.state;
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate('/');
+  };
 
   return (
     <>
+      <div
+        className="back-arrow"
+        onClick={() => { handleBackClick(); }}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            handleBackClick();
+          }
+        }}
+        role="button"
+        tabIndex={0}
+      >
+        back
+      </div>
       <div className="deets-container" key={currency.id}>
         <h2>{currency.name}</h2>
         <p className="market-cap">
@@ -22,7 +40,7 @@ const Details = () => {
         </p>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Details;

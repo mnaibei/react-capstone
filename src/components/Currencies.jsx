@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getCurrencies } from "../redux/currencies/currencySlice";
-import "../styles/currency.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCurrencies } from '../redux/currencies/currencySlice';
+import '../styles/currency.css';
 
 const Currencies = () => {
   const { currencies } = useSelector((store) => store.currencies);
@@ -21,13 +21,12 @@ const Currencies = () => {
   };
 
   // Filter currencies based on search query
-  const filteredCurrencies = currencies.filter((currency) =>
-    currency.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredCurrencies = currencies.filter((currency) => currency.name
+    .toLowerCase()
+    .includes(searchQuery.toLowerCase()));
 
   return (
     <>
-      {/* Add search input field */}
       <input
         type="text"
         placeholder="Search coin..."
@@ -39,9 +38,14 @@ const Currencies = () => {
         <div
           className="currency-container"
           key={currency.id}
-          onClick={() => {
-            handleDetails(currency);
+          onClick={() => { handleDetails(currency); }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleDetails(currency);
+            }
           }}
+          role="button"
+          tabIndex={0}
         >
           <h2 className="symbol">{currency.symbol}</h2>
         </div>

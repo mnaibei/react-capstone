@@ -5,7 +5,7 @@
   <img src="https://avatars.githubusercontent.com/u/69506217?v=4" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Space Travellers Hub</b></h3>
+  <h3><b>CryptoCurrency Tracker</b></h3>
 
 </div>
 
@@ -31,15 +31,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Travellers Hub <a name="about-project"></a>
+# 📖 CryptoCurrency Tracker<a name="about-project"></a>
 
-> ...
+> This is a mobile app that can be used to track various cryptocurrency assets.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> React-Redux
+> React-Redux, React, [Coinlore API](https://www.coinlore.com/cryptocurrency-data-api)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- > 
@@ -48,9 +48,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[List of Books]**
-- **[Add Book]**
-- **[Remove Book]**
+- **[List of Coins]**
+- **[Coin Details]**
+- **[Navigation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,7 +75,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:mnaibei/bookstore-react.git
+  git clone git@github.com:mnaibei/react-capstone.git
 ```
 
 ### Usage
@@ -105,8 +105,8 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[More Pages]**
-- [ ] **[Comment on Book]**
+- [ ] **[More Coins]**
+<!-- - [ ] **[Comment on Book]** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
