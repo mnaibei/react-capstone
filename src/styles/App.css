@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App {
+  background-color: gainsboro;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100vh;
+}

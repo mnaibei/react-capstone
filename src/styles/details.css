@@ -1,0 +1,41 @@
+* {
+  text-transform: capitalize;
+}
+
+.back-arrow {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.currency-name {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.currency-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deets-container {
+  border: 1px solid brown;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.deets {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.deets:nth-child(even) {
+  background-color: antiquewhite;
+}
