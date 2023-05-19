@@ -1,0 +1,43 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.currency-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.currency-card {
+  border: 1px solid brown;
+  cursor: pointer;
+  min-height: 100px;
+  display: grid;
+  place-items: center;
+  background-color: gainsboro;
+  box-shadow: 0 0 0.2rem;
+}
+
+.currency-card:nth-child(4n+2),
+.currency-card:nth-child(4n+3) {
+  background-color: antiquewhite;
+}
+
+.search {
+  outline: none;
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+
+.search-input {
+  min-height: 30px;
+  min-width: 50vw;
+}
+
+.change {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
