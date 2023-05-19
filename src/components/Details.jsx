@@ -112,11 +112,11 @@ const Details = () => {
             price:
             {' '}
             <FaBitcoin />
-            {currency.price_btc}
+            {Number(currency.price_btc).toFixed(2)}
           </p>
           <p className="price-usd deets">
             price: $
-            {currency.price_usd}
+            {Number(currency.price_usd).toFixed(2)}
           </p>
         </div>
       </div>
