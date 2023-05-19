@@ -34,7 +34,7 @@ describe('Details component', () => {
     render(
       <Router>
         <Details />
-      </Router>
+      </Router>,
     );
 
     expect(screen.getByText('Bitcoin')).toBeInTheDocument();

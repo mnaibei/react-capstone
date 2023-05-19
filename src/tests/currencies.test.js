@@ -11,8 +11,9 @@ describe('Currencies', () => {
       <BrowserRouter>
         <Provider store={Store}>
           <Currencies />
-        </Provider>,
-      </BrowserRouter>
+        </Provider>
+        ,
+      </BrowserRouter>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
