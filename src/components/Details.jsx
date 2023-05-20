@@ -34,11 +34,22 @@ const Details = () => {
         <div>
           <p className="market-cap deets">
             market cap: $
-            {Number(currency.market_cap_usd).toFixed(2)}
+            {Number(currency.market_cap_usd).toLocaleString(undefined, {
+              maximumFractionDigits: 2,
+            })}
           </p>
           <p className="volume deets">
             volume(24h): $
-            {Number(currency.volume24a).toFixed(2)}
+            {Number(currency.volume24a).toLocaleString(undefined, {
+              maximumFractionDigits: 2,
+            })}
+          </p>
+          <p className="total-supply deets">
+            total supply:
+            {' '}
+            {Number(currency.tsupply).toLocaleString(undefined, {
+              maximumFractionDigits: 2,
+            })}
           </p>
           <p className="change deets">
             1h %:
@@ -103,11 +114,6 @@ const Details = () => {
               </>
             )}
           </p>
-          <p className="total-supply deets">
-            total supply:
-            {' '}
-            {Number(currency.tsupply).toFixed(2)}
-          </p>
           <p className="price-btc deets">
             price:
             {' '}
@@ -116,7 +122,9 @@ const Details = () => {
           </p>
           <p className="price-usd deets">
             price: $
-            {Number(currency.price_usd).toFixed(2)}
+            {Number(currency.price_usd).toLocaleString(undefined, {
+              maximumFractionDigits: 2,
+            })}
           </p>
         </div>
       </div>
