@@ -8,9 +8,12 @@
 }
 
 .currency-name {
-  font-size: 50px;
+  font-size: 45px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
 }
 
 .currency-symbol {
@@ -24,8 +27,8 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   padding: 5px;
+  margin: 5px;
 }
 
 .deets {

@@ -30,7 +30,7 @@ const Details = () => {
       <h1 className="currency-name">{currency.name}</h1>
       <h4 className="currency-symbol">{currency.symbol}</h4>
       <div className="deets-container" key={currency.id}>
-        <h3 className="deets-title">coin details</h3>
+        <h3 className="deets-title">coin details:</h3>
         <div>
           <p className="market-cap deets">
             market cap: $
@@ -106,7 +106,7 @@ const Details = () => {
           <p className="total-supply deets">
             total supply:
             {' '}
-            {currency.tsupply}
+            {Number(currency.tsupply).toFixed(2)}
           </p>
           <p className="price-btc deets">
             price:
