@@ -62,7 +62,7 @@ const Currencies = () => {
                 <>
                   <FaChevronDown style={{ color: 'red' }} />
                   <span style={{ color: 'red' }}>
-                    {currency.percent_change_1h}
+                    {Math.abs(currency.percent_change_1h)}
                     %
                   </span>
                 </>

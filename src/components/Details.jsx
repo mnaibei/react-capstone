@@ -58,7 +58,7 @@ const Details = () => {
               <>
                 <FaChevronDown style={{ color: 'red' }} />
                 <span style={{ color: 'red' }}>
-                  {currency.percent_change_1h}
+                  {Math.abs(currency.percent_change_1h)}
                   %
                 </span>
               </>
@@ -79,7 +79,7 @@ const Details = () => {
               <>
                 <FaChevronDown style={{ color: 'red' }} />
                 <span style={{ color: 'red' }}>
-                  {currency.percent_change_24h}
+                  {Math.abs(currency.percent_change_24h)}
                   %
                 </span>
               </>
@@ -100,7 +100,7 @@ const Details = () => {
               <>
                 <FaChevronDown style={{ color: 'red' }} />
                 <span style={{ color: 'red' }}>
-                  {currency.percent_change_7d}
+                  {Math.abs(currency.percent_change_7d)}
                   %
                 </span>
               </>
