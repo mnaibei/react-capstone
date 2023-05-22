@@ -1,0 +1,45 @@
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.currency-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.currency-card {
+  cursor: pointer;
+  min-height: 100px;
+  display: grid;
+  place-items: center;
+  background-color: #4369b2;
+  box-shadow: 0 0 0.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.currency-card:nth-child(4n+2),
+.currency-card:nth-child(4n+3) {
+  background-color: #0a245286;
+}
+
+.search {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.search-input {
+  min-height: 30px;
+  min-width: 50vw;
+}
+
+.change {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}

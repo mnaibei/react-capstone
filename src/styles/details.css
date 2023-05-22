@@ -1,0 +1,45 @@
+* {
+  text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.back-arrow {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.currency-name {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+
+.currency-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deets-container {
+  border: 1px solid brown;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 30px 5px 5px 5px;
+}
+
+.deets {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.deets:nth-child(even) {
+  background-color: #0a245286;
+}
