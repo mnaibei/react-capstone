@@ -58,6 +58,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://cryptotracker-1qgb.onrender.com/)
+- [Video Link](https://www.loom.com/share/afcb3ef08b234794b74f8e7c64226111)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
