@@ -139,8 +139,9 @@ If you like this project give me a follow
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
 
-I would like to thank Microverse
+I would also like to thank Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

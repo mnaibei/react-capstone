@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 10px;
+  font-family: 'Lato', sans-serif;
 }
 
 .currency-container {
@@ -11,24 +12,24 @@
 }
 
 .currency-card {
-  border: 1px solid brown;
   cursor: pointer;
   min-height: 100px;
   display: grid;
   place-items: center;
-  background-color: gainsboro;
+  background-color: #4369b2;
   box-shadow: 0 0 0.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .currency-card:nth-child(4n+2),
 .currency-card:nth-child(4n+3) {
-  background-color: antiquewhite;
+  background-color: #0a245286;
 }
 
 .search {
   outline: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 10px;
 }
 

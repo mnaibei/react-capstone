@@ -1,5 +1,6 @@
 * {
   text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .back-arrow {
@@ -40,5 +41,5 @@
 }
 
 .deets:nth-child(even) {
-  background-color: antiquewhite;
+  background-color: #0a245286;
 }
